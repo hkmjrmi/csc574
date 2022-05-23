@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information</title>
+</head>
+<body>
+    <h1>Student Information</h1>
+    <hr>
+    <strong>Name: </strong><span id="studName"></span><br><br>
+    <strong>Program: </strong><span id="studProgram"></span><br><br>
+    <strong>Age: </strong><span id="studAge"></span><br><br>
+    <strong>Gender: </strong><span id="studGender"></span><br><br>
+    <strong>State: </strong><span id="studState"></span><br><br>
+    
+    <script>
+        // Retrieve
+        document.getElementById("studName").innerHTML = localStorage.getItem("name");
+        document.getElementById("studProgram").innerHTML = localStorage.getItem("program");
+        document.getElementById("studAge").innerHTML = localStorage.getItem("age");
+        document.getElementById("studGender").innerHTML = localStorage.getItem("gender");
+        document.getElementById("studState").innerHTML = localStorage.getItem("state");
+    </script>
+</body>
+</html>

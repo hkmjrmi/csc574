@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+</head>
+<body>
+    <form action="/output.html" id="form" method="get">
+        <h1>Student Form</h1>
+        <div class="form-container">
+          <hr/>
+          <div class="container">
+            <label for="name"><strong>Student Name :</strong></label>
+            <input type="text" placeholder="Enter Student Name" name="name" id="name"><br><br>
+            <label for="program"><strong>Student Program :</strong></label>
+            <input type="text" placeholder="Enter Student Program" name="program" id="program"><br><br>
+            <label for="age"><strong>Student Age :</strong></label>
+            <input type="text" placeholder="Enter Student Age" name="age" id="age"><br><br>
+            <label for="gender"><strong>Student Gender :</strong></label>
+            <input type="text" placeholder="Enter Student Gender" name="gender" id="gender"><br><br>
+            <label for="gender"><strong>Student State :</strong></label>
+            <input type="text" placeholder="Enter Student Gender" name="state" id="state"><br><br>
+          </div>
+          <input type="submit" onclick="myFunction()"></input>
+        </div>
+    </form>
+    <script>
+        function myFunction() 
+        {
+            // Set Item
+            var name = document.getElementById("name").value;
+            localStorage.setItem("name", name);
+
+            var program = document.getElementById("program").value;
+            localStorage.setItem("program", program);
+
+            var age = document.getElementById("age").value;
+            localStorage.setItem("age", age);
+
+            var gender = document.getElementById("gender").value;
+            localStorage.setItem("gender", gender);
+
+            var state = document.getElementById("state").value;
+            localStorage.setItem("state", state);
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgba(121, 173, 230, 0.91);
+}
+
+nav {
+    background: #222;
+    padding: 0 15px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: #111;
+}
+
+img {
+    border: 2px;
+    padding: 5px;
+}
+
+.gallery{
+    background-color: aliceblue;
+    margin: 20px;
+    border: 2px;
+    box-shadow: 15px 10px #888888;
+}
+.photos{
+    margin: auto;
+
+}
+
+.gallery-heading{
+    text-align: center;
+    
+}
+
+.card{
+    text-align: center;
+    padding: 5px;
+    background-color: antiquewhite;
+    box-shadow: 0 10px 15px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 50%;
+}
+
+form{
+    border: 1px;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(225, 225, 225);
+    box-shadow: 0 10px 15px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 35%;
+}
+
+.button1{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+label{
+    font-weight: bold;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+ .gaming {
+     margin: auto;
+ }
+
+ .image{
+    margin: 10px;
+    box-shadow: 0 10px 15px 0 rgba(0,0,0,0.2);
+    text-align: center;
+    color: antiquewhite;
+    padding: 10px;
+    background: url(../images/games.png) no-repeat;
+    background-size: cover;
+    height: 500px;
+    overflow: hidden;
+ }
+
+ .hobby-header{
+    border: 2px solid;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Press Start 2P';
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+
+ }
+
+ .hobby-text p{
+    line-height: 1.8;
+    border: 2px solid;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Press Start 2P';
+    text-align: center;
+    color: rgb(0, 0, 0);
+ }
+
+ .personal {
+     text-align: center;
+    border: 1px solid;
+    box-shadow: 0 10px 15px 0 rgba(0,0,0,0.2);
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+ }
+
+ .institutional {
+    text-align: center;
+    border: 1px solid;
+    box-shadow: 0 10px 15px 0 rgba(0,0,0,0.2);
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+ }
+

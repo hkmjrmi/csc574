@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator using JS</title>
+</head>
+<body>
+    <h1>Calculator Using JS</h1>
+    <hr>
+    <form name="calculator">
+      Input 1: <input type="text" name="first"><br><br>
+      Input 2: <input type="text" name="second"><br>
+      <hr>
+      <input type="button" value="ADD" onclick="javascript:addition();">
+      <input type="button" value="SUB" onclick="javascript:subtraction();">
+      <input type="button" value="MUL" onclick="javascript:multiply();">
+      <input type="button" value="DIV" onclick="javascript:division();">
+      <input type="button" value="MOD" onclick="javascript:modulus();">
+      <hr>
+      Output: <input type="text" name="total">
+      <hr>
+      <script type="text/javascript">
+          function multiply(){
+            a=Number(document.calculator.first.value);
+            b=Number(document.calculator.second.value);
+            c=a*b;
+            document.calculator.total.value=c;
+          }
+      
+          function addition(){
+            a=Number(document.calculator.first.value);
+            b=Number(document.calculator.second.value);
+            c=a+b;
+            document.calculator.total.value=c;
+          }
+      
+      
+          function subtraction(){
+            a=Number(document.calculator.first.value);
+            b=Number(document.calculator.second.value);
+            c=a-b;
+            document.calculator.total.value=c;
+          }
+      
+      
+          function division(){
+            a=Number(document.calculator.first.value);
+            b=Number(document.calculator.second.value);
+            c=a/b;
+            document.calculator.total.value=c;
+          }
+      
+          function modulus(){
+            a=Number(document.calculator.first.value);
+            b=Number(document.calculator.second.value);
+            c=a%b;
+            document.calculator.total.value=c;
+          }
+        </script>
+    </body>
+</html>
