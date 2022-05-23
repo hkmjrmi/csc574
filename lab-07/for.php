@@ -4,19 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 5 | Casting</title>
-</head>
-<head>
-<title>Basic PHP Syntax</title>
+    <title>Lab 5 | For</title>
 </head>
 <body>
-<?php
-    $num = 12;
-    $num2 = 10.37;
-    $sum = $num + $num2;
-    echo $sum;
-    echo "<br>";
-    echo (int)$sum;
-?>
+    <?php
+    for ($count = 1; $count <= 10; $count++) {
+        if ( ($count % 3) == 0) {
+            echo "$count is divisible by 3!<br>";
+        }
+    }
+    ?>
 </body>
 </html>
