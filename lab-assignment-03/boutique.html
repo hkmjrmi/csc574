@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rizalman Boutique</title>
+</head>
+<body>
+    <h1>Rizalman Boutique</h1>
+    <form action="">
+        <fieldset>
+            <legend>CUSTOMER INTO</legend>
+            <table>
+                <tr>
+                    <td>Customer Name</td>
+                    <td><input id="name" type="text" required></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><input id="address" type="text" required></td>
+                </tr>
+                <tr>
+                    <td>Contact Number</td>
+                    <td><input id="contactNo" type="text" required></td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>ORDER DETAILS</legend>
+            <table>
+                <tr>
+                    <th>Type of Baju</th>
+                    <th>Quantity</th>
+                </tr>
+                <tr>
+                    <td>Baju Kebaya</td>
+                    <td><input id="inputKebaya" type="text" required></td>
+                </tr>
+                <tr>
+                    <td>Baju Melayu Cekak Musang</td>
+                    <td><input id="inputMelayu" type="text" required></td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>PAYMENT DETAILS</legend>
+            <table>
+                <tr>
+                    <td>Total Amount</td>
+                    <td><input id="amount" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Deposit</td>
+                    <td><input id="deposit" type="text" required></td>
+                </tr>
+                <tr>
+                    <td>Balance</td>
+                    <td><input id="balance" type="text"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <button type="submit" value="SUBMIT" onclick="receipt()">RECEIPT</button>
+        <button type="submit" value="SUBMIT" onclick="calculate()">CALCULATE</button>
+        <button type="reset" value="RESET">CLEAR</button>
+    </form>
+    <script>
+        function calculate(){
+            var kebaya = 140;
+            var melayu = 150;
+            var qtKebaya = document.getElementById("inputKebaya").value;
+            var qtMelayu = document.getElementById("inputMelayu").value;
+            var deposit = document.getElementById("deposit").value;
+            var total = (qtKebaya*kebaya)+(qtMelayu*melayu);
+            var balance = total - deposit;
+            document.getElementById("amount").value = total;
+            document.getElementById("balance").value = balance;
+            
+
+        }
+
+        function receipt(){
+            var name = document.getElementById("name").value;
+            var address = document.getElementById("address").value;
+            var contactNo = document.getElementById("contactNo").value;
+            var totalPrice = document.getElementById("amount").value;
+            var balance = document.getElementById("balance").value;
+            
+            alert(
+                "\nThe receipt" + "\nName: " + name + "\nAddress: " + address + "\nContact Number: "+ contactNo 
+                + "\n=========================================" + "\nTotal Price: " +totalPrice +"\nBalance: " + balance);
+        }
+    </script>
+</body>
+</html>
+
